@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Product Sentiment Analyzer</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Product Sentiment Analyzer</h1>
+
+        <p>Enter a product review:</p>
+
+        <form method="POST">
+
+            <textarea
+                name="review"
+                rows="8"
+                placeholder="Write your product review here..."
+                required>{{ review }}</textarea>
+
+            <br>
+
+            <button type="submit">
+                Analyze Sentiment
+            </button>
+
+        </form>
+
+        {% if nb_result %}
+
+    <div class="result">
+
+        <h2>Results</h2>
+
+        <p>
+            <b>Naive Bayes:</b> {{ nb_result }}
+        </p>
+
+        <p>
+            <b>SVM:</b> {{ svm_result }}
+        </p>
+
+    </div>
+
+{% endif %}
+
+    </div>
+
+</body>
+
+</html>
