@@ -2,7 +2,7 @@
 
 A Machine Learning project that analyzes customer product reviews and classifies them as **Positive** or **Negative**.
 
-🌐 **Live Demo:** [Try the Web App](https://sentiment-analysis-appuct-reviews-meatfpjyh9z3tkdzyzyjr.streamlit.app/)
+🌐 **Live Demo:** [Try the Web App](https://sentiment-analysis-appuct-reviews-meatfjpyh9z3tkdzyzryjr.streamlit.app/)
 
 ## About the Project
 
